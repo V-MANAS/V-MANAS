@@ -1,48 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">Manas Varade — Building useful things with code</title>
-  <desc id="desc">A dark developer command-center banner with cyan and violet terminal-inspired lines, a system prompt, and the name Manas Varade.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Manas Varade — animated developer command center</title>
+  <desc id="desc">A futuristic dark terminal banner with a moving cyan scan beam, orbiting neon nodes, a pulsing violet glow, and the tagline Building useful things with code.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070A13"/>
+      <stop offset="0" stop-color="#050711"/>
       <stop offset=".52" stop-color="#0B1020"/>
-      <stop offset="1" stop-color="#11102A"/>
+      <stop offset="1" stop-color="#17102D"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5EE7F5"/>
-      <stop offset="1" stop-color="#A78BFA"/>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset=".52" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#C084FC"/>
     </linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#8FA3C8" stroke-opacity=".08" stroke-width="1"/>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#67E8F9" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#C084FC" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#9AA9D4" stroke-opacity=".085" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.1" fill="#67E8F9" fill-opacity=".32"/>
     </pattern>
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8"/>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
     </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="24" y="24" width="1152" height="342" rx="22"/></clipPath>
   </defs>
-  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
-  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
-  <circle cx="1050" cy="60" r="150" fill="#8B5CF6" opacity=".11" filter="url(#softGlow)"/>
-  <circle cx="100" cy="320" r="150" fill="#22D3EE" opacity=".09" filter="url(#softGlow)"/>
-  <rect x="38" y="34" width="1124" height="292" rx="18" fill="none" stroke="#667799" stroke-opacity=".32"/>
-  <path d="M38 78H1162" stroke="#667799" stroke-opacity=".26"/>
-  <circle cx="65" cy="56" r="5" fill="#F87171"/>
-  <circle cx="83" cy="56" r="5" fill="#FBBF24"/>
-  <circle cx="101" cy="56" r="5" fill="#34D399"/>
-  <text x="126" y="61" font-family="monospace" font-size="13" fill="#8493B7">MANAS / DEVELOPER PROFILE</text>
-  <text x="78" y="125" font-family="monospace" font-size="15" fill="#67E8F9">$ whoami</text>
-  <text x="78" y="196" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="60" letter-spacing="2" fill="#F2F5FF">MANAS VARADE</text>
-  <rect x="80" y="219" width="440" height="3" rx="2" fill="url(#glow)"/>
-  <text x="80" y="258" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#C7D2FE">Building useful things with code.</text>
-  <text x="80" y="294" font-family="monospace" font-size="14" fill="#8391B1">FULL-STACK DEVELOPMENT  /  BACKEND SYSTEMS  /  AI TOOLS</text>
-  <g transform="translate(875 120)">
-    <rect x="0" y="0" width="210" height="126" rx="12" fill="#070A13" fill-opacity=".72" stroke="#7C8AAF" stroke-opacity=".35"/>
-    <text x="18" y="27" font-family="monospace" font-size="12" fill="#7C8AAF">BUILD STATUS</text>
-    <circle cx="20" cy="51" r="4" fill="#34D399"/>
-    <text x="34" y="55" font-family="monospace" font-size="13" fill="#D2DBF2">learn()</text>
-    <circle cx="20" cy="77" r="4" fill="#67E8F9"/>
-    <text x="34" y="81" font-family="monospace" font-size="13" fill="#D2DBF2">build()</text>
-    <circle cx="20" cy="103" r="4" fill="#A78BFA"/>
-    <text x="34" y="107" font-family="monospace" font-size="13" fill="#D2DBF2">iterate()</text>
+
+  <rect width="1200" height="390" rx="26" fill="url(#bg)"/>
+  <g clip-path="url(#frame)">
+    <rect x="24" y="24" width="1152" height="342" fill="url(#grid)"/>
+    <ellipse cx="1040" cy="100" rx="230" ry="190" fill="url(#aura)">
+      <animate attributeName="rx" values="210;265;210" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="155;210;155" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="118" cy="335" r="118" fill="#06B6D4" opacity=".1" filter="url(#blur)">
+      <animate attributeName="opacity" values=".05;.16;.05" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <g opacity=".75" fill="none" stroke="url(#neon)">
+      <ellipse cx="1010" cy="205" rx="125" ry="64" stroke-opacity=".32" transform="rotate(-25 1010 205)"/>
+      <ellipse cx="1010" cy="205" rx="125" ry="64" stroke-opacity=".22" transform="rotate(42 1010 205)"/>
+      <ellipse cx="1010" cy="205" rx="82" ry="104" stroke-opacity=".2" transform="rotate(67 1010 205)"/>
+    </g>
+    <g filter="url(#glow)">
+      <circle cx="1010" cy="141" r="4" fill="#67E8F9">
+        <animateTransform attributeName="transform" type="rotate" from="0 1010 205" to="360 1010 205" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1135" cy="205" r="3.5" fill="#C084FC">
+        <animateTransform attributeName="transform" type="rotate" from="0 1010 205" to="-360 1010 205" dur="18s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1010" cy="101" r="3" fill="#818CF8">
+        <animateTransform attributeName="transform" type="rotate" from="0 1010 205" to="360 1010 205" dur="22s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="translate(48 45)">
+      <rect width="1104" height="44" rx="10" fill="#050711" fill-opacity=".72" stroke="#8190B8" stroke-opacity=".35"/>
+      <circle cx="20" cy="22" r="5" fill="#FB7185"/>
+      <circle cx="38" cy="22" r="5" fill="#FBBF24"/>
+      <circle cx="56" cy="22" r="5" fill="#34D399"/>
+      <text x="80" y="27" fill="#91A0C3" font-family="monospace" font-size="13" letter-spacing="1.3">MANAS / DEVELOPER PROFILE</text>
+      <text x="1050" y="27" text-anchor="end" fill="#67E8F9" font-family="monospace" font-size="12">SYSTEM ONLINE</text>
+      <circle cx="1072" cy="22" r="3" fill="#34D399">
+        <animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <text x="78" y="130" font-family="monospace" font-size="15" fill="#67E8F9">$ whoami <tspan fill="#A78BFA">▸</tspan></text>
+    <text x="74" y="199" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="61" letter-spacing="2.4" fill="#F4F7FF">MANAS VARADE</text>
+    <rect x="78" y="216" width="510" height="3" rx="2" fill="url(#neon)" filter="url(#glow)"/>
+    <rect x="78" y="216" width="165" height="3" rx="2" fill="#FFFFFF" opacity=".75">
+      <animate attributeName="x" values="78;423;78" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".0;.8;0" dur="4.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="80" y="256" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#CDD6F7">Building useful things with code.</text>
+    <text x="80" y="292" font-family="monospace" font-size="13" letter-spacing="1.1" fill="#8292B8">FULL-STACK DEVELOPMENT  /  BACKEND SYSTEMS  /  AI TOOLS</text>
+    <g transform="translate(825 125)">
+      <rect width="260" height="132" rx="14" fill="#050711" fill-opacity=".8" stroke="#8B9AC5" stroke-opacity=".43"/>
+      <rect x="0" y="0" width="260" height="2" rx="1" fill="url(#neon)"/>
+      <text x="18" y="27" font-family="monospace" font-size="11" letter-spacing="1.3" fill="#8998BC">BUILD PIPELINE</text>
+      <g font-family="monospace" font-size="13" fill="#D5DDF4">
+        <circle cx="22" cy="51" r="4" fill="#34D399"/>
+        <text x="37" y="55">learn()</text>
+        <circle cx="22" cy="78" r="4" fill="#67E8F9"/>
+        <text x="37" y="82">build()</text>
+        <circle cx="22" cy="105" r="4" fill="#C084FC"/>
+        <text x="37" y="109">iterate()</text>
+      </g>
+      <path d="M151 50h86M151 77h63M151 104h75" stroke="#64748B" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+      <path d="M151 50h86M151 77h63M151 104h75" stroke="url(#neon)" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 90">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="3.8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <g opacity=".65" stroke="url(#neon)" fill="none">
+      <path d="M80 324H1120" stroke-opacity=".3"/>
+      <path d="M80 324H310" stroke-width="2">
+        <animate attributeName="stroke-dasharray" values="0 240;240 0;0 240" dur="7s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <rect x="24" y="24" width="4" height="342" fill="url(#neon)" opacity=".9"/>
+    <rect x="24" y="24" width="1152" height="3" fill="url(#scan)" opacity=".8">
+      <animate attributeName="y" values="24;363;24" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".1;.85;.1" dur="9s" repeatCount="indefinite"/>
+    </rect>
   </g>
-  <path d="M835 282h265" stroke="url(#glow)" stroke-width="2" stroke-linecap="round" opacity=".8"/>
-  <path d="M1079 276l8 6-8 6" fill="none" stroke="#A78BFA" stroke-width="2"/>
+  <rect x="24" y="24" width="1152" height="342" rx="22" fill="none" stroke="#7685AC" stroke-opacity=".45"/>
+  <path d="M48 376h1104" stroke="url(#neon)" stroke-width="1" stroke-opacity=".45"/>
 </svg>
