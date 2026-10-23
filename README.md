@@ -4,7 +4,11 @@
 -->
 
 <p align="center">
-  <img src="assets/command-center.svg" alt="Manas Varade — a dark terminal-inspired banner reading Building useful things with code, with cyan and violet accents." width="100%" />
+  <img src="assets/command-center.svg" alt="Animated Manas Varade developer banner with neon scan beam, glowing orbiting nodes, terminal styling, and cyan-violet accents." width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2600&pause=700&color=C084FC&center=true&vCenter=true&width=760&lines=%24+initializing+developer+mode...;Shipping+full-stack+experiences;Engineering+cleaner+backends;Turning+ideas+into+working+software" alt="Animated terminal phrases: initializing developer mode, shipping full-stack experiences, engineering cleaner backends, and turning ideas into working software." />
 </p>
 
 <p align="center">
