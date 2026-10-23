@@ -4,7 +4,11 @@
 -->
 
 <p align="center">
-  <img src="assets/command-center.svg" alt="Manas Varade — a dark terminal-inspired banner reading Building useful things with code, with cyan and violet accents." width="100%" />
+  <img src="assets/command-center.svg" alt="Animated Manas Varade developer banner with neon scan beam, glowing orbiting nodes, terminal styling, and cyan-violet accents." width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2600&pause=700&color=C084FC&center=true&vCenter=true&width=760&lines=%24+initializing+developer+mode...;Shipping+full-stack+experiences;Engineering+cleaner+backends;Turning+ideas+into+working+software" alt="Animated terminal phrases: initializing developer mode, shipping full-stack experiences, engineering cleaner backends, and turning ideas into working software." />
 </p>
 
 <p align="center">
@@ -108,6 +112,6 @@ I like building software end to end: shaping an interface, designing APIs and da
 
 Build useful projects, get sharper with data structures and algorithms, and deepen the computer science fundamentals that lead to clear, reliable engineering.
 
-<p align="center"><code>while (learning) { build(); review(); repeat(); }</code></p>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:22D3EE,50:818CF8,100:C084FC&height=2&section=footer" alt="" width="100%" /></p>\n\n<p align="center"><code>while (learning) { build(); review(); repeat(); }</code></p>\n\n<p align="center"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3200&pause=900&color=67E8F9&center=true&vCenter=true&width=620&lines=%5B+keep+building+%5D;%5B+stay+curious+%5D;%5B+ship+and+iterate+%5D" alt="Animated closing prompt: keep building, stay curious, ship and iterate." /></p>
 
 <p align="center"><sub>Thanks for stopping by — explore the code, follow the experiments, and keep building.</sub></p>
