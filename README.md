@@ -108,6 +108,6 @@ I like building software end to end: shaping an interface, designing APIs and da
 
 Build useful projects, get sharper with data structures and algorithms, and deepen the computer science fundamentals that lead to clear, reliable engineering.
 
-<p align="center"><code>while (learning) { build(); review(); repeat(); }</code></p>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:22D3EE,50:818CF8,100:C084FC&height=2&section=footer" alt="" width="100%" /></p>\n\n<p align="center"><code>while (learning) { build(); review(); repeat(); }</code></p>\n\n<p align="center"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3200&pause=900&color=67E8F9&center=true&vCenter=true&width=620&lines=%5B+keep+building+%5D;%5B+stay+curious+%5D;%5B+ship+and+iterate+%5D" alt="Animated closing prompt: keep building, stay curious, ship and iterate." /></p>
 
 <p align="center"><sub>Thanks for stopping by — explore the code, follow the experiments, and keep building.</sub></p>
